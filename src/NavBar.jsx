@@ -276,13 +276,16 @@ const NavBar = () => {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <span className="text-[20px] p-2 border-2 rounded-full hover:bg-yellow-400 hover:border-yellow-400">
+            <span className="text-[20px] p-2 border-2 rounded-full hover:bg-yellow-400 hover:border-yellow-400 text-[#3a0e0e]">
               <IoSearch />
             </span>
-            <span className="text-[20px] p-2 border-2 rounded-full hover:bg-yellow-400 hover:border-yellow-400">
+            <span className="text-[20px] p-2 border-2 rounded-full hover:bg-yellow-400 hover:border-yellow-400 text-[#3a0e0e]">
               <FaUser />
             </span>
-            <span className="text-[20px] p-2 relative border-2 rounded-full hover:bg-yellow-400 hover:border-yellow-400">
+            <span
+              className="text-[20px] p-2
+            text-[#3a0e0e] relative border-2 rounded-full hover:bg-yellow-400 hover:border-yellow-400"
+            >
               <FaBasketShopping />
               <p className="bg-yellow-500 px-1 rounded-full top-0 right-1 absolute text-center text-[12px]">
                 0
