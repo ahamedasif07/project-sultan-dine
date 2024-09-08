@@ -12,6 +12,8 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { MdAddIcCall } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
+import { FaAngleUp } from "react-icons/fa6";
+import { FaChevronDown } from "react-icons/fa6";
 
 const NavBar = () => {
   const [isMenuOpen, setISMenuOpen] = useState(false);
@@ -166,13 +168,17 @@ const NavBar = () => {
               className="relative text-[13px] text-red-950 font-bold"
             >
               <h2
-                className="cursor-pointer"
+                className="cursor-pointer flex items-center gap-2"
                 onClick={() => setIsShopOpen((prev) => !prev)} // Toggle on click
               >
                 Shop
+                <span>{isShopOpen ? <FaAngleUp /> : <FaChevronDown />}</span>
               </h2>
               {isShopOpen && (
-                <ul className="absolute border-gray-600 left-0 mt-2 w-40 bg-white shadow-lg rounded-md z-50">
+                <ul
+                  className="absolute 
+                transition-all duration-500 ease-in-out transformborder-gray-600 left-0 mt-2 w-40 bg-white shadow-lg rounded-md z-50"
+                >
                   <li className="text-[13px] text-red-950 font-bold py-2">
                     <NavLink
                       to="/shop/clothing"
@@ -327,13 +333,18 @@ const NavBar = () => {
                 className="relative text-[13px] text-red-950 font-bold py-2"
               >
                 <h2
-                  className="cursor-pointer"
-                  onClick={() => setIsShopOpen((prev) => !prev)}
+                  className="cursor-pointer flex items-center gap-2"
+                  onClick={() => setIsShopOpen((prev) => !prev)} // Toggle on click
                 >
                   Shop
+                  <span>{isShopOpen ? <FaAngleUp /> : <FaChevronDown />}</span>
                 </h2>
                 {isShopOpen && (
-                  <ul className="absolute left-0 mt-2 w-[200px] border-2 border-gray-600 bg-white shadow-lg rounded-md z-50">
+                  <ul
+                    className={`absolute left-0 mt-2 w-[200px] border-2 border-gray-600 bg-white shadow-lg rounded-md z-50 transition-all duration-500 ease-in-out transform ${
+                      isShopOpen ? "opacity-100 h-auto" : "opacity-0 h-0"
+                    } overflow-hidden`}
+                  >
                     <li className="text-[13px] text-red-950 font-bold py-2">
                       <NavLink
                         to="/shop/clothing"
