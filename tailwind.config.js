@@ -4,13 +4,12 @@ export default {
   theme: {
     extend: {
       screens: {
-        xm: "0px", // Define the custom breakpoint
-        // You can also define other breakpoints if needed
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1536px",
+        xm: "0px", // Custom breakpoint
+        sm: "360px", // Small devices
+        md: "660px", // Medium devices
+        lg: "1024px", // Large devices
+        xl: "1280px", // Extra large devices
+        "2xl": "1536px", // 2X Extra large devices
       },
     },
   },
