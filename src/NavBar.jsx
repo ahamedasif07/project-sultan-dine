@@ -11,6 +11,7 @@ import { FaBasketShopping } from "react-icons/fa6";
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdAddIcCall } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const [isMenuOpen, setISMenuOpen] = useState(false);
@@ -136,31 +137,131 @@ const NavBar = () => {
             <img className="w-[110px]" src={brandLogo} alt="" />
           </div>
           <ul className="flex items-center gap-5 relative">
-            <li>Home</li>
-            <li>About</li>
+            <li className="text-[13px] text-red-950 font-bold">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-500 border-b-4 border-yellow-500"
+                    : "hover:text-yellow-500"
+                }
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="text-[13px] text-red-950 font-bold">
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-500 border-b-4 border-yellow-500"
+                    : "hover:text-yellow-500"
+                }
+              >
+                About
+              </NavLink>
+            </li>
             <li
-              ref={shopRef} // Attach the ref here
-              className="relative"
+              ref={shopRef}
+              className="relative text-[13px] text-red-950 font-bold"
             >
-              <span
+              <h2
                 className="cursor-pointer"
                 onClick={() => setIsShopOpen((prev) => !prev)} // Toggle on click
               >
                 Shop
-              </span>
+              </h2>
               {isShopOpen && (
-                <ul className="absolute left-0 mt-2 w-40 bg-white shadow-lg rounded-md z-50">
-                  <li className="p-2 hover:bg-gray-200">Clothing</li>
-                  <li className="p-2 hover:bg-gray-200">Accessories</li>
-                  <li className="p-2 hover:bg-gray-200">Footwear</li>
+                <ul className="absolute border-gray-600 left-0 mt-2 w-40 bg-white shadow-lg rounded-md z-50">
+                  <li className="text-[13px] text-red-950 font-bold py-2">
+                    <NavLink
+                      to="/shop/clothing"
+                      className={({ isActive }) =>
+                        isActive
+                          ? "text-yellow-500 border-b-4 border-yellow-500 p-2"
+                          : "p-2 hover:bg-gray-200"
+                      }
+                    >
+                      Clothing
+                    </NavLink>
+                  </li>
+                  <li className="text-[13px] text-red-950 py-2 font-bold">
+                    <NavLink
+                      to="/shop/accessories"
+                      className={({ isActive }) =>
+                        isActive
+                          ? "text-yellow-500 border-b-4 border-yellow-500 p-2"
+                          : "p-2 hover:bg-gray-200"
+                      }
+                    >
+                      Accessories
+                    </NavLink>
+                  </li>
+                  <li className="text-[13px] text-red-950 py-2 font-bold">
+                    <NavLink
+                      to="/shop/footwear"
+                      className={({ isActive }) =>
+                        isActive
+                          ? "text-yellow-500 border-b-4 border-yellow-500 p-2"
+                          : "p-2 hover:bg-gray-200"
+                      }
+                    >
+                      Footwear
+                    </NavLink>
+                  </li>
                 </ul>
               )}
             </li>
-            <li>Catering</li>
-            <li>Reservation</li>
-            <li>Media Outlets</li>
-            <li>Career</li>
+            <li className="text-[13px] text-red-950 font-bold">
+              <NavLink
+                to="/catering"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-500 border-b-4 border-yellow-500"
+                    : "hover:text-yellow-500"
+                }
+              >
+                Catering
+              </NavLink>
+            </li>
+            <li className="text-[13px] text-red-950 font-bold">
+              <NavLink
+                to="/reservation"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-500 border-b-4 border-yellow-500"
+                    : "hover:text-yellow-500"
+                }
+              >
+                Reservation
+              </NavLink>
+            </li>
+            <li className="text-[13px] text-red-950 font-bold">
+              <NavLink
+                to="/media-outlets"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-500 border-b-4 border-yellow-500"
+                    : "hover:text-yellow-500"
+                }
+              >
+                Media Outlets
+              </NavLink>
+            </li>
+            <li className="text-[13px] text-red-950 font-bold">
+              <NavLink
+                to="/career"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-500 border-b-4 border-yellow-500"
+                    : "hover:text-yellow-500"
+                }
+              >
+                Career
+              </NavLink>
+            </li>
           </ul>
+
           <div className="flex gap-3 items-center">
             <img className="w-[50px]" src={delebaryPmg} alt="" />
             <div className="flex flex-col justify-center">
@@ -197,13 +298,121 @@ const NavBar = () => {
               {isMenuOpen ? <RxCross2 /> : <AiOutlineMenu />}
             </h2>
             <ul
-              className={`absolute left-0 z-50 transition-all duration-500 ease-in-out ${
+              className={`absolute left-0 z-50 transition-all duration-500 w-[200px] ease-in-out ${
                 isMenuOpen ? "h-auto opacity-100" : "h-0 opacity-0"
               } overflow-hidden`}
             >
-              <li className="p-2">home</li>
-              <li className="p-2">about</li>
-              <li className="p-2">shop</li>
+              <li className="text-[13px] text-red-950 font-bold py-2">
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? "text-yellow-500" : "hover:text-yellow-500"
+                  }
+                >
+                  Home
+                </NavLink>
+              </li>
+              <li className="text-[13px] text-red-950 font-bold py-2">
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    isActive ? "text-yellow-500" : "hover:text-yellow-500"
+                  }
+                >
+                  About
+                </NavLink>
+              </li>
+              <li
+                ref={shopRef}
+                className="relative text-[13px] text-red-950 font-bold py-2"
+              >
+                <h2
+                  className="cursor-pointer"
+                  onClick={() => setIsShopOpen((prev) => !prev)}
+                >
+                  Shop
+                </h2>
+                {isShopOpen && (
+                  <ul className="absolute left-0 mt-2 w-[200px] border-2 border-gray-600 bg-white shadow-lg rounded-md z-50">
+                    <li className="text-[13px] text-red-950 font-bold py-2">
+                      <NavLink
+                        to="/shop/clothing"
+                        className={({ isActive }) =>
+                          isActive
+                            ? "text-yellow-500 p-2"
+                            : "p-2 hover:bg-gray-200"
+                        }
+                      >
+                        Clothing
+                      </NavLink>
+                    </li>
+                    <li className="text-[13px] text-red-950 font-bold py-2">
+                      <NavLink
+                        to="/shop/accessories"
+                        className={({ isActive }) =>
+                          isActive
+                            ? "text-yellow-500 p-2"
+                            : "p-2 hover:bg-gray-200"
+                        }
+                      >
+                        Accessories
+                      </NavLink>
+                    </li>
+                    <li className="text-[13px] text-red-950 font-bold py-2">
+                      <NavLink
+                        to="/shop/footwear"
+                        className={({ isActive }) =>
+                          isActive
+                            ? "text-yellow-500 p-2"
+                            : "p-2 hover:bg-gray-200"
+                        }
+                      >
+                        Footwear
+                      </NavLink>
+                    </li>
+                  </ul>
+                )}
+              </li>
+              <li className="text-[13px] text-red-950 font-bold py-2">
+                <NavLink
+                  to="/catering"
+                  className={({ isActive }) =>
+                    isActive ? "text-yellow-500" : "hover:text-yellow-500"
+                  }
+                >
+                  Catering
+                </NavLink>
+              </li>
+              <li className="text-[13px] text-red-950 font-bold py-2">
+                <NavLink
+                  to="/reservation"
+                  className={({ isActive }) =>
+                    isActive ? "text-yellow-500" : "hover:text-yellow-500"
+                  }
+                >
+                  Reservation
+                </NavLink>
+              </li>
+              <li className="text-[13px] text-red-950 font-bold py-2">
+                <NavLink
+                  to="/media-outlets"
+                  className={({ isActive }) =>
+                    isActive ? "text-yellow-500" : "hover:text-yellow-500"
+                  }
+                >
+                  Media Outlets
+                </NavLink>
+              </li>
+              <li className="text-[13px] text-red-950 font-bold py-2">
+                <NavLink
+                  to="/career"
+                  className={({ isActive }) =>
+                    isActive ? "text-yellow-500" : "hover:text-yellow-500"
+                  }
+                >
+                  Career
+                </NavLink>
+              </li>
             </ul>
           </div>
           <img className="w-[130px]" src={brandLogo} alt="" />
