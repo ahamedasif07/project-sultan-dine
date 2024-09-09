@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import miniBaner from "../../assets/images/sultan-dine-home/Offer-1063X639-1.png.webp";
 import fetureImage from "../../assets/images//sultan-dine-home/Feature-215X131-1-1.png.webp";
-import kacchiBg from "../../assets/images/sultan-dine-home/h1_banner2-1.png.webp";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const ExplorText = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 700,
+      offset: 100,
+      easing: "ease-in-out",
+      delay: 100,
+    });
+  }, []);
   return (
-    <div className="md:flex justify-center gap-12">
-      <div className="relative">
+    <div className="md:flex overflow-hidden justify-center gap-12">
+      <div data-aos="fade-right" className="relative ">
         {/* Image */}
         <img
           className="h-[300px] w-full object-cover"
@@ -27,7 +37,10 @@ export const ExplorText = () => {
         </div>
       </div>
 
-      <div className="flex items-center  h-[300px] px-4 pt-4 md:pt-0">
+      <div
+        data-aos="fade-left"
+        className="flex items-center   h-[300px] px-4 pt-4 md:pt-0"
+      >
         <div className="w-1/2 md:pl-9">
           <h2 className="text-2xl font-bold">
             Any <br />

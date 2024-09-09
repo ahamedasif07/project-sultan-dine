@@ -1,3 +1,7 @@
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
+
 import menuOne from "../../assets/images/sultan-dine-home/Menu-108X95-1.png.webp";
 import menuTwo from "../../assets/images/sultan-dine-home/Menu-108X95-2.png.webp";
 import menuTheree from "../../assets/images/sultan-dine-home/Menu-108X95-3.png.webp";
@@ -6,10 +10,23 @@ import menuFive from "../../assets/images/sultan-dine-home/Menu-108X95-5.png.web
 import menuFouSix from "../../assets/images/sultan-dine-home/Menu-108X95-6.png.webp";
 
 const MenuItems = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 100,
+      easing: "ease-in-out",
+      delay: 100,
+    });
+  }, []);
+
   return (
     <div className="container mx-auto">
-      <div className="grid grid-cols-2 py-[60px] gap-4 md:grid-cols-4  lg:grid-cols-6">
-        <div className="relative group rounded-full transition-all duration-300 ease-in-out">
+      <div className="grid grid-cols-2 py-[60px] gap-4 md:grid-cols-4 lg:grid-cols-6">
+        {/* Menu Item 1 */}
+        <div
+          className="relative group rounded-full transition-all duration-300 ease-in-out"
+          data-aos="fade-up"
+        >
           <div className="relative overflow-hidden rounded-full">
             <img
               className="relative z-10 rounded-full py-4 transition-all duration-300 ease-in-out"
@@ -18,77 +35,97 @@ const MenuItems = () => {
             />
             <div className="absolute inset-0 bg-yellow-400 z-0 transition-all duration-500 ease-in-out scale-0 group-hover:scale-125 rounded-full"></div>
           </div>
-          <h2 className="text-center font-bold text-[12px]  group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
+          <h2 className="text-center font-bold text-[12px] group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
             Beef Rezala
           </h2>
         </div>
 
-        <div className="relative group rounded-full transition-all duration-300 ease-in-out">
+        {/* Menu Item 2 */}
+        <div
+          className="relative group rounded-full transition-all duration-300 ease-in-out"
+          data-aos="fade-up"
+        >
           <div className="relative overflow-hidden rounded-full">
             <img
               className="relative z-10 rounded-full py-4 transition-all duration-300 ease-in-out"
               src={menuTheree}
-              alt="Beef Rezala"
+              alt="Kacchi"
             />
             <div className="absolute inset-0 bg-yellow-400 z-0 transition-all duration-500 ease-in-out scale-0 group-hover:scale-125 rounded-full"></div>
           </div>
-          <h2 className="text-center font-bold text-[12px]  group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
-            kacchi
+          <h2 className="text-center font-bold text-[12px] group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
+            Kacchi
           </h2>
         </div>
 
-        <div className="relative group rounded-full transition-all duration-300 ease-in-out">
+        {/* Menu Item 3 */}
+        <div
+          className="relative group rounded-full transition-all duration-300 ease-in-out"
+          data-aos="fade-up"
+        >
           <div className="relative overflow-hidden rounded-full">
             <img
               className="relative z-10 rounded-full py-4 transition-all duration-300 ease-in-out"
               src={menuFour}
-              alt="Beef Rezala"
+              alt="Rost"
             />
             <div className="absolute inset-0 bg-yellow-400 z-0 transition-all duration-500 ease-in-out scale-0 group-hover:scale-125 rounded-full"></div>
           </div>
-          <h2 className="text-center font-bold text-[12px]  group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
-            rost
+          <h2 className="text-center font-bold text-[12px] group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
+            Rost
           </h2>
         </div>
 
-        <div className="relative group rounded-full transition-all duration-300 ease-in-out">
+        {/* Menu Item 4 */}
+        <div
+          className="relative group rounded-full transition-all duration-300 ease-in-out"
+          data-aos="fade-up"
+        >
           <div className="relative overflow-hidden rounded-full">
             <img
               className="relative z-10 rounded-full py-4 transition-all duration-300 ease-in-out"
               src={menuFive}
-              alt="Beef Rezala"
+              alt="Polao"
             />
-            <div className="absolute inset-0 bg-yellow-400 z-0 transition-all duration-500 ease-in-out scale-0 group-hover:scale-125 rounded-full"></div>
           </div>
-          <h2 className="text-center font-bold text-[12px]  group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
+          <h2 className="text-center font-bold text-[12px] group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
             Polao
           </h2>
         </div>
 
-        <div className="relative group rounded-full transition-all duration-300 ease-in-out">
+        {/* Menu Item 5 */}
+        <div
+          className="relative group rounded-full transition-all duration-300 ease-in-out"
+          data-aos="fade-up"
+        >
           <div className="relative overflow-hidden rounded-full">
             <img
               className="relative z-10 rounded-full py-4 transition-all duration-300 ease-in-out"
               src={menuOne}
-              alt="Beef Rezala"
+              alt="Borhani"
             />
             <div className="absolute inset-0 bg-yellow-400 z-0 transition-all duration-500 ease-in-out scale-0 group-hover:scale-125 rounded-full"></div>
           </div>
-          <h2 className="text-center font-bold text-[12px]  group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
+          <h2 className="text-center font-bold text-[12px] group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
             Borhani
           </h2>
         </div>
-        <div className="relative group rounded-full transition-all duration-300 ease-in-out">
+
+        {/* Menu Item 6 */}
+        <div
+          className="relative group rounded-full transition-all duration-300 ease-in-out"
+          data-aos="fade-up"
+        >
           <div className="relative overflow-hidden rounded-full">
             <img
               className="relative z-10 rounded-full py-4 transition-all duration-300 ease-in-out"
               src={menuFouSix}
-              alt="Beef Rezala"
+              alt="Add On"
             />
             <div className="absolute inset-0 bg-yellow-400 z-0 transition-all duration-500 ease-in-out scale-0 group-hover:scale-125 rounded-full"></div>
           </div>
-          <h2 className="text-center font-bold text-[12px]  group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
-            add on
+          <h2 className="text-center font-bold text-[12px] group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
+            Add On
           </h2>
         </div>
       </div>
