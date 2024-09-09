@@ -80,11 +80,30 @@ const NavBar = () => {
     };
   }, []);
 
+  // ---------------navbar  on scroll fixed ----------
+  const [isFixed, setIsFixed] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        // Adjust the value 50 to when you want the navbar to become fixed
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="">
+    <div className=" ">
       {/* ----------- navbar location part start---------- */}
-      <div className="bg-[#880000] hidden lg:block py-2">
-        <div className="flex gap-5 px-3 max-w-[1100px] mx-auto items-center">
+      <div className="bg-[#880000] hidden lg:block ">
+        <div className="flex gap-5 px-3 py-2 max-w-[1100px] mx-auto items-center">
           <div className="flex gap-x-4 flex-wrap ">
             {locations.map((loc, idx) => (
               <a
@@ -133,7 +152,11 @@ const NavBar = () => {
       {/* ----------- navbar location part end---------- */}
 
       {/* ----------main nav start ---------- */}
-      <div className="hidden lg:block">
+      <div
+        className={`hidden lg:block bg-white ${
+          isFixed ? "fixed top-0 left-0 w-full shadow-lg z-50" : ""
+        }`}
+      >
         <nav className="flex py-4 md:container mx-auto items-center justify-around">
           <div>
             <img className="w-[110px]" src={brandLogo} alt="" />
@@ -163,22 +186,20 @@ const NavBar = () => {
                 About
               </NavLink>
             </li>
+            {/* Shop Dropdown */}
             <li
               ref={shopRef}
               className="relative text-[13px] text-red-950 font-bold"
             >
               <h2
                 className="cursor-pointer flex items-center gap-2"
-                onClick={() => setIsShopOpen((prev) => !prev)} // Toggle on click
+                onClick={() => setIsShopOpen((prev) => !prev)}
               >
                 Shop
                 <span>{isShopOpen ? <FaAngleUp /> : <FaChevronDown />}</span>
               </h2>
               {isShopOpen && (
-                <ul
-                  className="absolute 
-                transition-all duration-500 ease-in-out transformborder-gray-600 left-0 mt-2 w-40 bg-white shadow-lg rounded-md z-50"
-                >
+                <ul className="absolute transition-all duration-500 ease-in-out border-gray-600 left-0 mt-2 w-40 bg-white shadow-lg rounded-md z-50">
                   <li className="text-[13px] text-red-950 font-bold py-2">
                     <NavLink
                       to="/shop/clothing"
@@ -268,6 +289,7 @@ const NavBar = () => {
             </li>
           </ul>
 
+          {/* Right side content */}
           <div className="flex gap-3 items-center">
             <img className="w-[50px]" src={delebaryPmg} alt="" />
             <div className="flex flex-col justify-center">
@@ -282,10 +304,7 @@ const NavBar = () => {
             <span className="text-[20px] p-2 border-2 rounded-full hover:bg-yellow-400 hover:border-yellow-400 text-[#3a0e0e]">
               <FaUser />
             </span>
-            <span
-              className="text-[20px] p-2
-            text-[#3a0e0e] relative border-2 rounded-full hover:bg-yellow-400 hover:border-yellow-400"
-            >
+            <span className="text-[20px] p-2 text-[#3a0e0e] relative border-2 rounded-full hover:bg-yellow-400 hover:border-yellow-400">
               <FaBasketShopping />
               <p className="bg-yellow-500 px-1 rounded-full top-0 right-1 absolute text-center text-[12px]">
                 0
@@ -297,7 +316,13 @@ const NavBar = () => {
       {/* ----------main nav end ---------- */}
 
       {/* -----------mini device nav---------*/}
-      <div className="block lg:hidden">
+      <div
+        className={`block lg:hidden bg-white py-2 ${
+          isFixed
+            ? "fixed top-0 left-0 w-full z-50 shadow-md transition-all duration-300"
+            : "relative"
+        }`}
+      >
         <nav className="flex items-center justify-between px-3">
           <div className="relative ">
             <h2
@@ -307,7 +332,7 @@ const NavBar = () => {
               {isMenuOpen ? <RxCross2 /> : <AiOutlineMenu />}
             </h2>
             <ul
-              className={`absolute left-0 z-50 transition-all duration-500 w-[200px] ease-in-out ${
+              className={`absolute bg-white px-3 mt-4 left-0 z-50 transition-all duration-500 w-[200px] ease-in-out ${
                 isMenuOpen ? "h-auto opacity-100" : "h-0 opacity-0"
               } overflow-hidden`}
             >
