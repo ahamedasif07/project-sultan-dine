@@ -13,8 +13,8 @@ export const HomeSarvices = () => {
     });
   }, []);
   return (
-    <div className="md:container   mx-auto">
-      <div className="grid overflow-hidden md:grid-cols-3 justify-center gap-6 grid-cols-1 py-4">
+    <div className="md:container  px-4  mx-auto">
+      <div className="grid overflow-hidden md:grid-cols-3 justify-center gap-6 grid-cols-1 py-8">
         <div
           data-aos="fade-right"
           className="md:flex text-center  flex rounded-md flex-col items-center   gap-2 border-dashed border-2 hover:border-red-800 transition-all duration-500 ease-in-out"

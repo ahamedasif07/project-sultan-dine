@@ -20,20 +20,19 @@ const MenuItems = () => {
   }, []);
 
   return (
-    <div className="container mx-auto">
-      <div className="grid grid-cols-2 py-[60px] gap-4 md:grid-cols-4 lg:grid-cols-6">
+    <div className="container mx-auto px-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 py-6">
         {/* Menu Item 1 */}
         <div
           className="relative group rounded-full transition-all duration-300 ease-in-out"
           data-aos="fade-up"
         >
-          <div className="relative overflow-hidden rounded-full">
+          <div className="relative rounded-full">
             <img
-              className="relative z-10 rounded-full py-4 transition-all duration-300 ease-in-out"
+              className="relative z-10 rounded-full max-w-full h-auto py-2 transition-all duration-300 ease-in-out"
               src={menuTwo}
               alt="Beef Rezala"
             />
-            <div className="absolute inset-0 bg-yellow-400 z-0 transition-all duration-500 ease-in-out scale-0 group-hover:scale-125 rounded-full"></div>
           </div>
           <h2 className="text-center font-bold text-[12px] group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
             Beef Rezala
@@ -45,9 +44,9 @@ const MenuItems = () => {
           className="relative group rounded-full transition-all duration-300 ease-in-out"
           data-aos="fade-up"
         >
-          <div className="relative overflow-hidden rounded-full">
+          <div className="relative rounded-full">
             <img
-              className="relative z-10 rounded-full py-4 transition-all duration-300 ease-in-out"
+              className="relative z-10 rounded-full max-w-full h-auto py-2 transition-all duration-300 ease-in-out"
               src={menuTheree}
               alt="Kacchi"
             />
@@ -63,9 +62,9 @@ const MenuItems = () => {
           className="relative group rounded-full transition-all duration-300 ease-in-out"
           data-aos="fade-up"
         >
-          <div className="relative overflow-hidden rounded-full">
+          <div className="relative rounded-full">
             <img
-              className="relative z-10 rounded-full py-4 transition-all duration-300 ease-in-out"
+              className="relative z-10 rounded-full max-w-full h-auto py-2 transition-all duration-300 ease-in-out"
               src={menuFour}
               alt="Rost"
             />
@@ -81,9 +80,9 @@ const MenuItems = () => {
           className="relative group rounded-full transition-all duration-300 ease-in-out"
           data-aos="fade-up"
         >
-          <div className="relative overflow-hidden rounded-full">
+          <div className="relative rounded-full">
             <img
-              className="relative z-10 rounded-full py-4 transition-all duration-300 ease-in-out"
+              className="relative z-10 rounded-full max-w-full h-auto py-2 transition-all duration-300 ease-in-out"
               src={menuFive}
               alt="Polao"
             />
@@ -98,9 +97,9 @@ const MenuItems = () => {
           className="relative group rounded-full transition-all duration-300 ease-in-out"
           data-aos="fade-up"
         >
-          <div className="relative overflow-hidden rounded-full">
+          <div className="relative rounded-full">
             <img
-              className="relative z-10 rounded-full py-4 transition-all duration-300 ease-in-out"
+              className="relative z-10 rounded-full max-w-full h-auto py-2 transition-all duration-300 ease-in-out"
               src={menuOne}
               alt="Borhani"
             />
@@ -116,9 +115,9 @@ const MenuItems = () => {
           className="relative group rounded-full transition-all duration-300 ease-in-out"
           data-aos="fade-up"
         >
-          <div className="relative overflow-hidden rounded-full">
+          <div className="relative rounded-full">
             <img
-              className="relative z-10 rounded-full py-4 transition-all duration-300 ease-in-out"
+              className="relative z-10 rounded-full max-w-full h-auto py-2 transition-all duration-300 ease-in-out"
               src={menuFouSix}
               alt="Add On"
             />
