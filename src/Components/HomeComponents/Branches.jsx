@@ -62,14 +62,19 @@ const Branches = () => {
       <div className="md:flex py-3">
         <div className="grid grid-cols-3 px-4 md:w-2/3">
           {locations.map((loc, idx) => (
-            <div className="group flex items-center gap-3" key={idx}>
+            <a
+              href={loc.mapUrl}
+              target="_blank"
+              className="group flex items-center gap-3"
+              key={idx}
+            >
               <p className="text-[16px] font-bold">
                 <CiLocationOn />
               </p>
-              <h2 className=" gap-2group-hover:text-yellow-500 transition-all duration-300 py-2 ease-in-out group font-semibold items-center">
+              <h2 className=" gap-2 group-hover:text-yellow-500 transition-all duration-300 py-2 ease-in-out group font-semibold items-center">
                 {loc.location}
               </h2>
-            </div>
+            </a>
           ))}
         </div>
         <div className="flex md:w-1/3 bg-[#FFFFFF] rounded-md px-4 justify-around items-center">
