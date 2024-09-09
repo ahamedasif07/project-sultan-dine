@@ -17,7 +17,7 @@ const Benar = () => {
           BEST KACCHI IN TOWN
         </h2>
         <button
-          className="bg-white py-3 mt-6
+          className="bg-white hover:bg-yellow-500 hover:text-white py-3 mt-6 transition-all duration-500 ease-in-out
        px-4  rounded-md font-bold"
         >
           ORDER NOW
@@ -26,7 +26,7 @@ const Benar = () => {
       <div className="w-full   flex flex-col items-center absolute bottom-[-25px] ">
         <button
           className="bg-[#880000] text-white   py-3 
-       px-4 uppercase rounded-md font-bold"
+       px-5 uppercase rounded-md text-[14px] font-semibold"
         >
           menus
         </button>
