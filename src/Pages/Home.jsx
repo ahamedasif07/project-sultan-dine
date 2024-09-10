@@ -3,6 +3,7 @@ import Branches from "../Components/HomeComponents/Branches";
 import { ExplorText } from "../Components/HomeComponents/ExplorText";
 import { HomeSarvices } from "../Components/HomeComponents/HomeSarvices";
 import MenuItems from "../Components/HomeComponents/MenuItems";
+import Review from "../Components/HomeComponents/Review";
 
 export const Home = () => {
   return (
@@ -12,6 +13,7 @@ export const Home = () => {
       <ExplorText></ExplorText>
       <HomeSarvices></HomeSarvices>
       <Branches></Branches>
+      <Review></Review>
     </div>
   );
 };

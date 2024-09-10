@@ -6,50 +6,101 @@ const Branches = () => {
     {
       location: "Dhanmondi",
       mapUrl: "https://www.google.com/maps?q=Dhanmondi",
+      rating: 4.7,
+      reviews: 4500,
     },
     {
       location: "Gulshan 2",
       mapUrl: "https://www.google.com/maps?q=Gulshan+2",
+      rating: 4.8,
+      reviews: 5300,
     },
     {
       location: "Bailyroad",
       mapUrl: "https://www.google.com/maps?q=Bailyroad",
+      rating: 4.5,
+      reviews: 3200,
     },
-    { location: "Mirpur", mapUrl: "https://www.google.com/maps?q=Mirpur" },
+    {
+      location: "Mirpur",
+      mapUrl: "https://www.google.com/maps?q=Mirpur",
+      rating: 4.3,
+      reviews: 4100,
+    },
     {
       location: "Puran Dhaka",
       mapUrl: "https://www.google.com/maps?q=Puran+Dhaka",
+      rating: 4.6,
+      reviews: 3800,
     },
     {
       location: "Bashundhara R/A",
       mapUrl: "https://www.google.com/maps?q=Bashundhara+R/A",
+      rating: 4.9,
+      reviews: 2900,
     },
-    { location: "Uttara", mapUrl: "https://www.google.com/maps?q=Uttara" },
+    {
+      location: "Uttara",
+      mapUrl: "https://www.google.com/maps?q=Uttara",
+      rating: 4.4,
+      reviews: 2700,
+    },
     {
       location: "Narayanganj",
       mapUrl: "https://www.google.com/maps?q=Narayanganj",
+      rating: 4.7,
+      reviews: 3500,
     },
-    { location: "Savar", mapUrl: "https://www.google.com/maps?q=Savar" },
+    {
+      location: "Savar",
+      mapUrl: "https://www.google.com/maps?q=Savar",
+      rating: 4.2,
+      reviews: 4600,
+    },
     {
       location: "Chittagong",
       mapUrl: "https://www.google.com/maps?q=Chittagong",
+      rating: 4.8,
+      reviews: 5500,
     },
-    { location: "Agrabad", mapUrl: "https://www.google.com/maps?q=Agrabad" },
+    {
+      location: "Agrabad",
+      mapUrl: "https://www.google.com/maps?q=Agrabad",
+      rating: 4.1,
+      reviews: 4800,
+    },
     {
       location: "Johnson Road",
       mapUrl: "https://www.google.com/maps?q=Johnson+Road",
+      rating: 4.6,
+      reviews: 3400,
     },
     {
       location: "Mirpur 12",
       mapUrl: "https://www.google.com/maps?q=Mirpur+12",
+      rating: 4.3,
+      reviews: 4300,
     },
     {
       location: "Rajshahi",
       mapUrl: "https://www.google.com/maps?q=Rajshahi",
+      rating: 4.7,
+      reviews: 5200,
     },
-    { location: "Khulna", mapUrl: "https://www.google.com/maps?q=Khulna" },
-    { location: "Sylhet", mapUrl: "https://www.google.com/maps?q=Sylhet" },
+    {
+      location: "Khulna",
+      mapUrl: "https://www.google.com/maps?q=Khulna",
+      rating: 4.9,
+      reviews: 2900,
+    },
+    {
+      location: "Sylhet",
+      mapUrl: "https://www.google.com/maps?q=Sylhet",
+      rating: 4.5,
+      reviews: 3500,
+    },
   ];
+
   return (
     <div className="md:container mx-auto">
       <div className="flex justify-center py-2">
