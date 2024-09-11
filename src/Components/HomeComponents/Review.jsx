@@ -47,7 +47,7 @@ const Review = () => {
   };
 
   return (
-    <div className="py-10 bg-[#FFF6F2] overflow-hidden">
+    <div className="py-10 bg-[#F7F2E2] overflow-hidden">
       {" "}
       {/* Add overflow-hidden here */}
       <Slider {...settings}>
