@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import letstUpdated1 from "../../assets/images/sultan-dine-home/opaninng1.webp";
 import letstUpdated2 from "../../assets/images/sultan-dine-home/opaning2.webp";
 import letstUpdated3 from "../../assets/images/sultan-dine-home/opaning3.webp";
+import AOS from "aos";
 
 const LatestUpdated = () => {
   const letestPosts = [
@@ -36,13 +37,22 @@ const LatestUpdated = () => {
       image: letstUpdated3, // Replace with the actual path to your image
     },
   ];
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 100,
+      easing: "ease-in-out",
+      delay: 100,
+    });
+  }, []);
 
   return (
-    <div className="md:container mx-auto">
+    <div className="md:container mx-auto overflow-hidden">
       <h2 className="text-4xl font-bold text-red-900 py-5 ">Latest updated</h2>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
         {letestPosts.map((posts, index) => (
           <div
+            data-aos="fade-up"
             key={index}
             className="rounded-md bg-white border-2  border-gray-200 flex flex-col"
           >

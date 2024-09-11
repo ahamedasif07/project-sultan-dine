@@ -45,12 +45,12 @@ const BlogReview = () => {
     },
   ];
   return (
-    <div className="md:container mx-auto">
+    <div className="md:container mx-auto overflow-hidden">
       <h2 className="text-4xl font-bold text-red-900 pt-5  ">Latest Posts</h2>
       <p className="font-semibold text-[14px] my-3">
         {letestPosts.length} video found
       </p>
-      <div className="grid md:grid-cols-3 grid-cols-1 gap-5">
+      <div data-aos="fade-up" className="grid md:grid-cols-3 grid-cols-1 gap-5">
         {letestPosts.map((post, idx) => (
           <div key={idx}>
             <a href={post.videoLink}>
