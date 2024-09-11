@@ -1,4 +1,5 @@
 import Benar from "../Components/HomeComponents/Benar";
+import BlogReview from "../Components/HomeComponents/BlogReview";
 import Branches from "../Components/HomeComponents/Branches";
 import { ExplorText } from "../Components/HomeComponents/ExplorText";
 import { HomeSarvices } from "../Components/HomeComponents/HomeSarvices";
@@ -16,6 +17,7 @@ export const Home = () => {
       <Branches></Branches>
       <Review></Review>
       <LatestUpdated />
+      <BlogReview />
     </div>
   );
 };
