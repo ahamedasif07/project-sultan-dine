@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import rizalaImg from "../../assets/images/sultan-dine-about/Feature-215X131-1.png.webp";
 import aboutImg from "../../assets/images/sultan-dine-about/about-imager-4.png.webp";
 
 const Rezala = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="overflow-hidden">
       <div className="md:container mx-auto overflow-hidden px-4 py-5">
@@ -35,12 +48,17 @@ const Rezala = () => {
               backgroundImage: `url(${aboutImg})`,
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
+              backgroundAttachment: "fixed", // Fixes background
             }}
           >
             <img
-              className="md:pt-[150px] md:pr-[25px] pr-8 pt-2 hover:transition-all hover:scale-105 ease-in-out md:block mx-auto"
+              className="md:pt-[70px] md:pr-[25px] pr-8 pt-2 hover:transition-all hover:scale-105 ease-in-out md:block mx-auto"
               src={rizalaImg}
               alt=""
+              style={{
+                transform: `translateY(${(scrollY % 40) - 40}px)`, // Moves image up/down by max 5px
+                transition: "transform 0.1s ease-out", // Smooth transition
+              }}
             />
           </div>
         </div>
