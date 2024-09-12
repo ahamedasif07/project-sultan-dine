@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div>
       <div
-        className="border-2 md:h-[550px]  pt-6 border-red-600"
+        className=" md:h-[550px]  pt-6 "
         style={{
           backgroundImage: `url(${foterImg})`, // Correct syntax for backgroundImage
           backgroundSize: "",
@@ -116,11 +116,11 @@ const Footer = () => {
               </p>
               <div className="relative">
                 <input
-                  className="py-2 md:w-[350px] px-4 bg-[#181818] border-2 border-gray-500"
+                  className="py-2 max-w-[350px] px-4 bg-[#181818] border-2 border-gray-500"
                   type="email"
                   placeholder="Your Email..."
                 />
-                <button className="uppercase text-[14px] font-bold absolute md:right-10 top-[1px] py-2 px-4 right-8 bg-yellow-500">
+                <button className="uppercase text-[14px] font-bold absolute md:right-10 top-[1px] py-3 pb-2 px-4 right-8 bg-yellow-500">
                   Subcribe
                 </button>
               </div>

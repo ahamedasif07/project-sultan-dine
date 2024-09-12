@@ -6,6 +6,7 @@
 
 body {
   font-family: "Raleway", sans-serif;
+  background: #f7f2e2;
 }
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";

@@ -179,8 +179,8 @@ const NavBar = () => {
                 to="/about"
                 className={({ isActive }) =>
                   isActive
-                    ? "text-yellow-500 border-b-4 border-yellow-500"
-                    : "hover:text-yellow-500"
+                    ? "text-yellow-500 border-b-4 text-[13px]  font-bold border-yellow-500"
+                    : "hover:text-yellow-500 "
                 }
               >
                 About
