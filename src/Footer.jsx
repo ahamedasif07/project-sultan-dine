@@ -16,9 +16,9 @@ const Footer = () => {
         }}
       >
         <div className="flex items-center justify-between group ">
-          <p className="h-[2px] w-[100px] bg-slate-100 group-hover:w-full transition-all duration-300 ease-in-out "></p>
+          <p className="h-[2px] md:w-[100px] w-[40px] bg-slate-100 group-hover:w-full transition-all duration-300 ease-in-out "></p>
           <img className="w-[180px] " src={sultanLogo} alt="" />
-          <p className="h-[2px] w-[100px] bg-slate-100 group-hover:w-full transition-all duration-300 ease-in-out "></p>
+          <p className="h-[2px] md:w-[100px] w-[40px] bg-slate-100 group-hover:w-full transition-all duration-300 ease-in-out "></p>
         </div>
 
         <div className="grid py-6  md:grid-cols-3 md:container mx-auto grid-cols-1">
@@ -46,20 +46,15 @@ const Footer = () => {
 
               {/* dowen part */}
               <p className="text-[15px] text-gray-400 font-bold pt-5">
-                {" "}
                 Corporate Branch
               </p>
               <p className="text-[15px] py-1 text-gray-400">
-                {" "}
                 House- 41 Road- 52
               </p>
               <p className="text-[15px] py-1 text-gray-400">
                 Samsuddin Mansion (1st Floor)
               </p>
-              <p className="text-[15px] py-1 text-gray-400">
-                {" "}
-                Gulshan 2 Circle
-              </p>
+              <p className="text-[15px] py-1 text-gray-400">Gulshan 2 Circle</p>
               <p className="text-[15px] py-1 text-gray-400">
                 Corporate Number :
                 <span className="text-yellow-500 font-semibold">
@@ -101,10 +96,7 @@ const Footer = () => {
               <p className="text-[15px] py-1 text-gray-400">
                 Samsuddin Mansion (1st Floor)
               </p>
-              <p className="text-[15px] py-1 text-gray-400">
-                {" "}
-                Gulshan 2 Circle
-              </p>
+              <p className="text-[15px] py-1 text-gray-400">Gulshan 2 Circle</p>
               <p className="text-[15px] py-1 text-gray-400">
                 Corporate Number :
                 <span className="text-yellow-500 font-semibold">
@@ -139,9 +131,8 @@ const Footer = () => {
       <div className=" py-8 bg-[#1E1D23]">
         <div className="container mx-auto">
           <h2 className="text-gray-200 text-[14px]">
-            {" "}
-            Copyright © 2023. All Rights Reserved by{" "}
-            <span className="text-yellow-500">Sultan’s Dine</span>
+            Copyright © 2023. All Rights Reserved by
+            <span className="text-yellow-500 pl-2">Sultan’s Dine</span>
           </h2>
         </div>
       </div>
