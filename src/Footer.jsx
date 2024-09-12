@@ -129,7 +129,7 @@ const Footer = () => {
         </div>
       </div>
       <div className=" py-8 bg-[#1E1D23]">
-        <div className="container mx-auto">
+        <div className="md:container px-4 mx-auto">
           <h2 className="text-gray-200 text-[14px]">
             Copyright © 2023. All Rights Reserved by
             <span className="text-yellow-500 pl-2">Sultan’s Dine</span>
