@@ -3,25 +3,25 @@ import aboutImg from "../../assets/images/sultan-dine-about/about-imager-4.png.w
 
 const KacchiBasmoti = () => {
   return (
-    <div className="md:container mx-auto overflow-hidden">
+    <div className="md:container mx-auto overflow-hidden px-4 py-5">
       <div className="md:flex  justify-around md:gap-10 items-center">
         <div
           data-aos="fade-right"
-          className="md:w-1/2 w-full h-[450px]"
+          className="md:w-1/2 w-full md:h-[550px] flex justify-center items-center"
           style={{
             backgroundImage: `url(${aboutImg})`,
-
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
         >
           <img
-            className="md:pt-[100px] md:pl-[150px] hover:transition-all hover:scale-105 ease-in-out"
+            className="md:pt-[150px] md:pl-[150px] hover:transition-all hover:scale-105 ease-in-out md:block mx-auto"
             src={kacchiImg}
             alt=""
           />
         </div>
-        <div data-aos="fade-left" className="md:w-1/2 w-full md:pl-8 ">
+
+        <div data-aos="fade-left" className="md:w-1/2 w-full md:pl-8  ">
           <h2 className="italicTtyle pb-5 text-2xl font-semibold text-yellow-500">
             Our Quality
           </h2>

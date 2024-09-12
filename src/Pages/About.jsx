@@ -7,6 +7,7 @@ import OurStrength from "../Components/AboutComponents/OurStrength";
 import NationStory from "../Components/AboutComponents/NationStory";
 import { Weading } from "../Components/AboutComponents/Weading";
 import KacchiBasmoti from "../Components/AboutComponents/KacchiBasmoti";
+import Rezala from "../Components/AboutComponents/Rezala";
 
 const About = () => {
   return (
@@ -17,6 +18,7 @@ const About = () => {
       <NationStory></NationStory>
       <Weading></Weading>
       <KacchiBasmoti></KacchiBasmoti>
+      <Rezala></Rezala>
     </div>
   );
 };
