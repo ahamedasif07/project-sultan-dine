@@ -56,7 +56,7 @@ const Rezala = () => {
               src={rizalaImg}
               alt=""
               style={{
-                transform: `translateY(${(scrollY % 40) - 40}px)`, // Moves image up/down by max 5px
+                transform: `translateY(${(scrollY % 100) - 40}px)`, // Moves image up/down by max 5px
                 transition: "transform 0.1s ease-out", // Smooth transition
               }}
             />

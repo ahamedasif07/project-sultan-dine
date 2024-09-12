@@ -3,7 +3,7 @@ import delebaryPng from "../../assets/images/sultan-dine-home/delebary.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-export const HomeSarvices = () => {
+const HomeSarvices = () => {
   useEffect(() => {
     AOS.init({
       duration: 700,
@@ -55,3 +55,4 @@ export const HomeSarvices = () => {
     </div>
   );
 };
+export default HomeSarvices;

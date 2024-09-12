@@ -9,6 +9,8 @@
 body {
   font-family: "Raleway", sans-serif;
   background: #f7f2e2;
+
+  scroll-behavior: smooth;
 }
 .italicTtyle {
   font-family: "Norican", cursive;

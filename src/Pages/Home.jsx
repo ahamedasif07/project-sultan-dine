@@ -2,7 +2,8 @@ import Benar from "../Components/HomeComponents/Benar";
 import BlogReview from "../Components/HomeComponents/BlogReview";
 import Branches from "../Components/HomeComponents/Branches";
 import { ExplorText } from "../Components/HomeComponents/ExplorText";
-import { HomeSarvices } from "../Components/HomeComponents/HomeSarvices";
+import HomeSarvices from "../Components/HomeComponents/HomeSarvices";
+
 import LatestUpdated from "../Components/HomeComponents/LatestUpdated";
 import MenuItems from "../Components/HomeComponents/MenuItems";
 import Review from "../Components/HomeComponents/Review";
