@@ -5,6 +5,7 @@ import About from "./Pages/About";
 import Catering from "./Pages/Catering";
 import Reservation from "./Pages/Reservation";
 import Media from "./Pages/Media";
+import Career from "./Pages/Career";
 // Correct import for LayOut component
 
 export const router = createBrowserRouter([
@@ -32,6 +33,10 @@ export const router = createBrowserRouter([
       {
         path: "/media-outlets",
         element: <Media></Media>,
+      },
+      {
+        path: "/career",
+        element: <Career></Career>,
       },
     ],
   },
