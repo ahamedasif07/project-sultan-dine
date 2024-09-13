@@ -116,11 +116,11 @@ const Footer = () => {
               </p>
               <div className="relative">
                 <input
-                  className="py-2 max-w-[350px] px-4 bg-[#181818] border-2 border-gray-500"
+                  className="py-2 max-w-full px-4 bg-[#181818] border-2 border-gray-500"
                   type="email"
                   placeholder="Your Email..."
                 />
-                <button className="uppercase text-[14px] font-bold absolute md:right-10 top-[1px] py-3 pb-2 px-4 right-8 bg-yellow-500">
+                <button className="uppercase rounded-md text-[14px] font-bold absolute md:right[28px] top-[1px] py-3 pb-2 px-4 right-8 bg-yellow-500">
                   Subcribe
                 </button>
               </div>
