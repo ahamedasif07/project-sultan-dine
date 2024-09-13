@@ -3,6 +3,7 @@ import LayOut from "./LayOut";
 import { Home } from "./Pages/Home";
 import About from "./Pages/About";
 import Catering from "./Pages/Catering";
+import Reservation from "./Pages/Reservation";
 // Correct import for LayOut component
 
 export const router = createBrowserRouter([
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
       {
         path: "/catering",
         element: <Catering />,
+      },
+      {
+        path: "/reservation",
+        element: <Reservation></Reservation>,
       },
     ],
   },
