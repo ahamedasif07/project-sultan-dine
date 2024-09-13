@@ -23,7 +23,7 @@ const MenuItems = () => {
     <div className="md:container  mx-auto px-4">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 py-6">
         {/* Menu Item 1 */}
-        <div
+        {/* <div
           className="relative group rounded-full transition-all duration-300 ease-in-out"
           data-aos="fade-up"
         >
@@ -33,6 +33,22 @@ const MenuItems = () => {
               src={menuTwo}
               alt="Beef Rezala"
             />
+          </div>
+          <h2 className="text-center font-bold text-[12px] group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
+            Beef Rezala
+          </h2>
+        </div> */}
+        <div
+          className="relative group rounded-full transition-all duration-300 ease-in-out"
+          data-aos="fade-up"
+        >
+          <div className="relative rounded-full">
+            <img
+              className="relative z-10 rounded-full max-w-full h-auto py-2 transition-all duration-300 ease-in-out"
+              src={menuTwo}
+              alt="Kacchi"
+            />
+            <div className="absolute inset-0 bg-yellow-400 z-0 transition-all duration-500 ease-in-out scale-0 group-hover:scale-125 rounded-full"></div>
           </div>
           <h2 className="text-center font-bold text-[12px] group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
             Beef Rezala
@@ -76,6 +92,7 @@ const MenuItems = () => {
         </div>
 
         {/* Menu Item 4 */}
+
         <div
           className="relative group rounded-full transition-all duration-300 ease-in-out"
           data-aos="fade-up"
@@ -84,8 +101,9 @@ const MenuItems = () => {
             <img
               className="relative z-10 rounded-full max-w-full h-auto py-2 transition-all duration-300 ease-in-out"
               src={menuFive}
-              alt="Polao"
+              alt="Borhani"
             />
+            <div className="absolute inset-0 bg-yellow-400 z-0 transition-all duration-500 ease-in-out scale-0 group-hover:scale-125 rounded-full"></div>
           </div>
           <h2 className="text-center font-bold text-[12px] group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
             Polao
