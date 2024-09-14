@@ -324,7 +324,7 @@ const NavBar = () => {
               : "relative"
           }`}
         >
-          <nav className="flex items-center border-4   border-r-green-500  justify-between translate-x">
+          <nav className="flex items-center  justify-between translate-x">
             <div className="">
               <h2
                 onClick={() => setISMenuOpen(!isMenuOpen)}
@@ -332,13 +332,13 @@ const NavBar = () => {
               >
                 {isMenuOpen === false ? <AiOutlineMenu /> : ""}
               </h2>
-              <div className="absolute top-0  ">
+              <div className="absolute top-0">
                 <ul
-                  className={` bg-black h-[100%]  fixed px-5  py-2 left-0 z-50 transition-all duration-500 w-[70%] ease-in-out ${
-                    isMenuOpen ? "h-full block" : "hidden"
-                  } overflow-hidden`}
+                  className={`bg-black h-[100%] fixed px-5 py-2 left-0 z-50 transition-transform duration-500 ease-in-out w-[70%] ${
+                    isMenuOpen ? "translate-x-0" : "-translate-x-full"
+                  }`}
                 >
-                  <div className="flex  justify-between items-center py-2  ">
+                  <div className="flex justify-between items-center py-2">
                     <h2></h2>
                     <h2 className="flex float-end">
                       <span
@@ -349,7 +349,7 @@ const NavBar = () => {
                       </span>
                     </h2>
                   </div>
-                  <li className="text-[16px] my-2 text-gray-200 flex  font-bold py-2">
+                  <li className="text-[16px] my-2 text-gray-200 flex font-bold py-2">
                     <NavLink
                       to="/"
                       className={({ isActive }) =>
@@ -375,7 +375,7 @@ const NavBar = () => {
                   >
                     <h2
                       className="cursor-pointer flex items-center gap-2"
-                      onClick={() => setIsShopOpen((prev) => !prev)} // Toggle on click
+                      onClick={() => setIsShopOpen((prev) => !prev)}
                     >
                       Shop
                       <span>
