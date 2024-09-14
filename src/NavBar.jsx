@@ -162,7 +162,7 @@ const NavBar = () => {
             <img className="w-[110px]" src={brandLogo} alt="" />
           </div>
           <ul className="flex items-center gap-5 relative">
-            <li className="text-[16px] my-2 text-gray-200 text--bold">
+            <li className="text-[14px] my-2  text-red-950 font-bold">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
