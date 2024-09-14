@@ -162,7 +162,7 @@ const NavBar = () => {
             <img className="w-[110px]" src={brandLogo} alt="" />
           </div>
           <ul className="flex items-center gap-5 relative">
-            <li className="text-[13px] text-gray-200 text--bold">
+            <li className="text-[16px] my-2 text-gray-200 text--bold">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
@@ -334,31 +334,32 @@ const NavBar = () => {
               </h2>
               <div className="absolute top-0  ">
                 <ul
-                  className={` bg-black h-[100%]  fixed px-3  py-2 left-0 z-50 transition-all duration-500 w-[70%] ease-in-out ${
+                  className={` bg-black h-[100%]  fixed px-5  py-2 left-0 z-50 transition-all duration-500 w-[70%] ease-in-out ${
                     isMenuOpen ? "h-full block" : "hidden"
                   } overflow-hidden`}
                 >
-                  <div className="flex justify-between items-center">
-                    <li className="text-[13px] text-gray-200 flex  font-bold py-2">
-                      <NavLink
-                        to="/"
-                        className={({ isActive }) =>
-                          isActive ? "text-yellow-500" : "hover:text-yellow-500"
-                        }
-                      >
-                        Home
-                      </NavLink>
-                    </li>
-                    <p>
+                  <div className="flex  justify-between items-center py-2  ">
+                    <h2></h2>
+                    <h2 className="flex float-end">
                       <span
                         onClick={() => setISMenuOpen(!isMenuOpen)}
                         className="text-2xl text-gray-200"
                       >
                         {isMenuOpen && <RxCross2 />}
                       </span>
-                    </p>
+                    </h2>
                   </div>
-                  <li className="text-[13px] text-gray-200 text--bold py-2">
+                  <li className="text-[16px] my-2 text-gray-200 flex  font-bold py-2">
+                    <NavLink
+                      to="/"
+                      className={({ isActive }) =>
+                        isActive ? "text-yellow-500" : "hover:text-yellow-500"
+                      }
+                    >
+                      Home
+                    </NavLink>
+                  </li>
+                  <li className="text-[16px] my-2 text-gray-200 text--bold py-2">
                     <NavLink
                       to="/about"
                       className={({ isActive }) =>
@@ -370,7 +371,7 @@ const NavBar = () => {
                   </li>
                   <li
                     ref={shopRef}
-                    className="relative text-[13px] text-gray-200 text--bold py-2"
+                    className="relative text-[16px] my-2 text-gray-200 text--bold py-2"
                   >
                     <h2
                       className="cursor-pointer flex items-center gap-2"
@@ -387,7 +388,7 @@ const NavBar = () => {
                           isShopOpen ? "opacity-100 h-auto" : "opacity-0 h-0"
                         } overflow-hidden`}
                       >
-                        <li className="text-[13px] text-gray-200 text--bold py-2">
+                        <li className="text-[16px] my-2 text-gray-200 text--bold py-2">
                           <NavLink
                             to="/shop/clothing"
                             className={({ isActive }) =>
@@ -399,7 +400,7 @@ const NavBar = () => {
                             Clothing
                           </NavLink>
                         </li>
-                        <li className="text-[13px] text-gray-200 text--bold py-2">
+                        <li className="text-[16px] my-2 text-gray-200 text--bold py-2">
                           <NavLink
                             to="/shop/accessories"
                             className={({ isActive }) =>
@@ -411,7 +412,7 @@ const NavBar = () => {
                             Accessories
                           </NavLink>
                         </li>
-                        <li className="text-[13px] text-gray-200 text--bold py-2">
+                        <li className="text-[16px] my-2 text-gray-200 text--bold py-2">
                           <NavLink
                             to="/shop/footwear"
                             className={({ isActive }) =>
@@ -426,7 +427,7 @@ const NavBar = () => {
                       </ul>
                     )}
                   </li>
-                  <li className="text-[13px] text-gray-200 text--bold py-2">
+                  <li className="text-[16px] my-2 text-gray-200 text--bold py-2">
                     <NavLink
                       to="/catering"
                       className={({ isActive }) =>
@@ -436,7 +437,7 @@ const NavBar = () => {
                       Catering
                     </NavLink>
                   </li>
-                  <li className="text-[13px] text-gray-200 text--bold py-2">
+                  <li className="text-[16px] my-2 text-gray-200 text--bold py-2">
                     <NavLink
                       to="/reservation"
                       className={({ isActive }) =>
@@ -446,7 +447,7 @@ const NavBar = () => {
                       Reservation
                     </NavLink>
                   </li>
-                  <li className="text-[13px] text-gray-200 text--bold py-2">
+                  <li className="text-[16px] my-2 text-gray-200 text--bold py-2">
                     <NavLink
                       to="/media-outlets"
                       className={({ isActive }) =>
@@ -456,7 +457,7 @@ const NavBar = () => {
                       Media Outlets
                     </NavLink>
                   </li>
-                  <li className="text-[13px] text-gray-200 text--bold py-2">
+                  <li className="text-[16px] my-2 text-gray-200 text--bold py-2">
                     <NavLink
                       to="/career"
                       className={({ isActive }) =>
