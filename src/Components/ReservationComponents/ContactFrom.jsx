@@ -14,7 +14,7 @@ const ContactFrom = () => {
   return (
     <div>
       {/* contact from */}
-      <div className="md:container mx-auto pt-[20px] pb-12">
+      <div className="md:max-w-screen-xl mx-auto pt-[20px] pb-12">
         <div className="relative bg-[#f9f4e6] p-10 border border-gray-300 rounded-md max-w-full mx-auto mt-8">
           {/* Overlapping Title */}
           <h2 className="absolute -top-4 left-4 bg-[#f9f4e6] px-2 text-[18px] font-bold text-gray-700">

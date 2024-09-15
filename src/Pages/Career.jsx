@@ -40,7 +40,7 @@ const Career = () => {
   return (
     <div>
       <ShairdHeader about="Career" path="Career"></ShairdHeader>
-      <div className="md:container mx-auto px-4 pt-14 pb-20">
+      <div className="md:max-w-screen-xl mx-auto px-4 pt-14 pb-20">
         <h3 className="text-4xl font-extrabold">Join Sultan's Dine Family</h3>
         <div>
           {jobData.map((job, index) => (

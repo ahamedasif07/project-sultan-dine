@@ -33,7 +33,7 @@ const Dishes = () => {
   ];
 
   return (
-    <div className="md:container mx-auto py-5 px-4">
+    <div className="md:max-w-screen-xl mx-auto py-5 px-4">
       <div className="grid md:grid-cols-3 md:gap-10 grid-cols-1">
         {dishes.map((dish) => (
           <DishCard dish={dish} key={dish.id}></DishCard>

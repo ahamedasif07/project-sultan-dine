@@ -17,8 +17,8 @@ const Rezala = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden">
-      <div className="md:container mx-auto overflow-hidden px-4 py-5">
+    <div className="overflow-hidden md:max-w-screen-xl px-4">
+      <div className=" mx-auto overflow-hidden px-4 py-5">
         <div className="flex flex-col-reverse md:flex-row justify-around md:gap-10 items-center">
           {/* Text container */}
           <div

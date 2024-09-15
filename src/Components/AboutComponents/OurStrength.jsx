@@ -14,7 +14,7 @@ const OurStrength = () => {
     });
   }, []);
   return (
-    <div className="md:container mx-auto py-5 overflow-hidden">
+    <div className="md:max-w-screen-2xl px-4 mx-auto py-5 overflow-hidden">
       <h2 className="md:text-5xl text-3xl font-bold text-center py-6">
         Our Strength
       </h2>

@@ -100,7 +100,7 @@ const NavBar = () => {
   }, []);
 
   return (
-    <div className=" ">
+    <div className="">
       {/* ----------- navbar location part start---------- */}
       <div className="bg-[#880000] hidden lg:block ">
         <div className="flex gap-5 px-3 py-2 max-w-[1100px] mx-auto items-center">

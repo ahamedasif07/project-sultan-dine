@@ -11,7 +11,7 @@ export const Weading = () => {
     });
   }, []);
   return (
-    <div className="md:container mx-auto py-5 px-4 overflow-hidden">
+    <div className="md:max-w-screen-xl mx-auto py-5 px-4 overflow-hidden">
       <div className="md:flex justify-around md:gap-10 items-center">
         <div data-aos="fade-right" className="md:w-1/2 w-full md:pl-8 ">
           <h2 className="italicTtyle pb-5 text-2xl font-semibold text-yellow-500">

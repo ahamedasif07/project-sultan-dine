@@ -47,7 +47,7 @@ const LatestUpdated = () => {
   }, []);
 
   return (
-    <div className="md:container mx-auto overflow-hidden px-4">
+    <div className="md:max-w-screen-xl mx-auto overflow-hidden px-4">
       <h2 className="text-4xl font-bold text-red-900 py-5 ">Latest updated</h2>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
         {letestPosts.map((posts, index) => (

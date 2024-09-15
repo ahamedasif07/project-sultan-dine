@@ -13,7 +13,7 @@ const HomeSarvices = () => {
     });
   }, []);
   return (
-    <div className="md:container  mx-auto  px-4">
+    <div className="md:max-w-screen-xl  mx-auto  px-4">
       <div className="grid overflow-hidden md:grid-cols-3 justify-center gap-6 grid-cols-1 py-8">
         <div
           data-aos="fade-right"

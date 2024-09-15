@@ -102,7 +102,7 @@ const Branches = () => {
   ];
 
   return (
-    <div className="md:container mx-auto">
+    <div className="md:max-w-screen-xl  mx-auto px-4">
       <div className="flex justify-center py-2">
         <button className="px-6 py-3 bg-red-800 rounded-md uppercase  text-gray-100 text-[14px] font-bold">
           {" "}

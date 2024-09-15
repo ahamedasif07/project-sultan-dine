@@ -17,7 +17,7 @@ const KacchiBasmoti = () => {
   }, []);
 
   return (
-    <div className="md:container mx-auto overflow-hidden px-4 py-5">
+    <div className="md:max-w-screen-xl mx-auto overflow-hidden px-4 py-5">
       <div className="md:flex justify-around md:gap-10 items-center">
         <div
           data-aos="fade-right"

@@ -4,7 +4,7 @@ const JobCard = ({ job }) => {
   console.log(job);
   const { title, description } = job;
   return (
-    <div className="py-6">
+    <div className="py-6 ">
       <div className="bg-[#FFFFFF] border border-gray-300 rounded-md  pb-3 ">
         <div className="">
           <div className="bg-[#F5F5F5] ">

@@ -45,7 +45,7 @@ const BlogReview = () => {
     },
   ];
   return (
-    <div className="md:container px-4 mx-auto overflow-hidden">
+    <div className="md:max-w-screen-xl py-7 px-4 mx-auto overflow-hidden">
       <h2 className="text-4xl font-bold text-red-900 pt-5  ">Latest Posts</h2>
       <p className="font-semibold text-[14px] my-3">
         {letestPosts.length} video found
