@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import rizalaImg from "../../assets/images/sultan-dine-about/Feature-215X131-1.png.webp";
 import aboutImg from "../../assets/images/sultan-dine-about/about-imager-4.png.webp";
 

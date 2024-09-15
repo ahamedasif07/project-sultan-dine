@@ -1,4 +1,3 @@
-import React from "react";
 import nationIMg from "../../assets/images/sultan-dine-about/2_optimized.jpg.webp";
 
 const NationStory = () => {

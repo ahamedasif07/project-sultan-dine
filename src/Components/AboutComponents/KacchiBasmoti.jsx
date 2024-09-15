@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import kacchiImg from "../../assets/images/sultan-dine-about/Feature-148X138.png.webp";
 import aboutImg from "../../assets/images/sultan-dine-about/about-imager-4.png.webp";
 

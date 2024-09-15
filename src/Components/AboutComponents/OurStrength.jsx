@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import uniteDesign from "../../assets/images/sultan-dine-about/Untitled-design-1.png.webp";
 import uniteDesign2 from "../../assets/images/sultan-dine-about/Untitled-design-2.png.webp";
