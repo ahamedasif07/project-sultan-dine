@@ -187,7 +187,8 @@ const NavBar = () => {
               </NavLink>
             </li>
             {/* Shop Dropdown */}
-            <li
+            {/* Shop Dropdown */}
+            {/* <li
               ref={shopRef}
               className="relative text-[13px] text-red-950 font-bold"
             >
@@ -196,20 +197,20 @@ const NavBar = () => {
                 onClick={() => setIsShopOpen((prev) => !prev)}
               >
                 Shop
-                <span>{isShopOpen ? <FaAngleUp /> : <FaChevronDown />}</span>
+                <p>{isShopOpen ? <FaAngleUp /> : <FaChevronDown />}</p>
               </h2>
               {isShopOpen && (
                 <ul className="absolute transition-all duration-500 ease-in-out border-gray-600 left-0 mt-2 w-40 bg-white shadow-lg rounded-md z-50">
                   <li className="text-[13px] text-red-950 font-bold py-2">
                     <NavLink
-                      to="/shop/clothing"
+                      to="/kacchi"
                       className={({ isActive }) =>
                         isActive
                           ? "text-yellow-500 border-b-4 border-yellow-500 p-2"
                           : "p-2 hover:bg-gray-200"
                       }
                     >
-                      Clothing
+                      Kacchi
                     </NavLink>
                   </li>
                   <li className="text-[13px] text-red-950 py-2 font-bold">
@@ -238,7 +239,8 @@ const NavBar = () => {
                   </li>
                 </ul>
               )}
-            </li>
+            </li> */}
+            {/* -----drop dowen end ----*/}
             <li className="text-[13px] text-red-950 font-bold">
               <NavLink
                 to="/catering"

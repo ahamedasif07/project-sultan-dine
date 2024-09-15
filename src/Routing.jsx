@@ -6,6 +6,8 @@ import Catering from "./Pages/Catering";
 import Reservation from "./Pages/Reservation";
 import Media from "./Pages/Media";
 import Career from "./Pages/Career";
+import KacchiBasmoti from "./Components/AboutComponents/KacchiBasmoti";
+import KacchiDetails from "./Pages/KacchiDetails";
 // Correct import for LayOut component
 
 export const router = createBrowserRouter([
@@ -37,6 +39,10 @@ export const router = createBrowserRouter([
       {
         path: "/career",
         element: <Career></Career>,
+      },
+      {
+        path: "/kacchi",
+        element: <KacchiDetails></KacchiDetails>,
       },
     ],
   },
