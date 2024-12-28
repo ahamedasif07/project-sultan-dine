@@ -8,6 +8,7 @@ import menuTheree from "../../assets/images/sultan-dine-home/Menu-108X95-3.png.w
 import menuFour from "../../assets/images/sultan-dine-home/Menu-108X95-4.png.webp";
 import menuFive from "../../assets/images/sultan-dine-home/Menu-108X95-5.png.webp";
 import menuFouSix from "../../assets/images/sultan-dine-home/Menu-108X95-6.png.webp";
+import { Link } from "react-router-dom";
 
 const MenuItems = () => {
   useEffect(() => {
@@ -56,7 +57,8 @@ const MenuItems = () => {
         </div>
 
         {/* Menu Item 2 */}
-        <div
+        <Link
+          to="/kacchiMenu"
           className="relative group rounded-full transition-all duration-300 ease-in-out"
           data-aos="fade-up"
         >
@@ -71,7 +73,7 @@ const MenuItems = () => {
           <h2 className="text-center font-bold text-[12px] group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
             Kacchi
           </h2>
-        </div>
+        </Link>
 
         {/* Menu Item 3 */}
         <div

@@ -11,7 +11,7 @@ import { FaBasketShopping } from "react-icons/fa6";
 import { AiOutlineMenu } from "react-icons/ai";
 import { MdAddIcCall } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FaAngleUp } from "react-icons/fa6";
 import { FaChevronDown } from "react-icons/fa6";
 
@@ -66,19 +66,25 @@ const NavBar = () => {
     { location: "Sylhet", mapUrl: "https://www.google.com/maps?q=Sylhet" },
   ];
 
-  // Handle clicks outside of the dropdown
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (shopRef.current && !shopRef.current.contains(event.target)) {
-        setIsShopOpen(false);
-      }
-    };
+  // const menuLink = () => {
+  //   if (isShopOpen) {
+  //     setIsShopOpen(false);
+  //   }
+  // };
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+  // Handle clicks outside of the dropdown
+  // useEffect(() => {
+  //   const handleClickOutside = (event) => {
+  //     // if (shopRef.current && !shopRef.current.contains(event.target)) {
+  //     // }
+  //     setIsShopOpen(event);
+  //   };
+
+  //   document.addEventListener("mousedown", handleClickOutside);
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, []);
 
   // ---------------navbar  on scroll fixed ----------
   const [isFixed, setIsFixed] = useState(false);
@@ -188,26 +194,27 @@ const NavBar = () => {
             </li>
             {/* Shop Dropdown */}
             {/* Shop Dropdown */}
-            {/* <li
-              ref={shopRef}
-              className="relative text-[13px] text-red-950 font-bold"
-            >
+            {/* <li className="relative text-[13px] text-red-950 font-bold">
               <h2
                 className="cursor-pointer flex items-center gap-2"
-                onClick={() => setIsShopOpen((prev) => !prev)}
+                onClick={() => setIsShopOpen(!isShopOpen)}
               >
                 Shop
                 <p>{isShopOpen ? <FaAngleUp /> : <FaChevronDown />}</p>
               </h2>
               {isShopOpen && (
-                <ul className="absolute transition-all duration-500 ease-in-out border-gray-600 left-0 mt-2 w-40 bg-white shadow-lg rounded-md z-50">
+                <ul className="absolute z-[100000] transition-all duration-500 ease-in-out border-gray-600 left-0 mt-2 w-40 bg-white shadow-lg rounded-md ">
+                  <li className="text-[13px] text-red-950 py-2 font-bold">
+                    <a href="/kacchi">kacchi 22</a>
+                  </li>
+
                   <li className="text-[13px] text-red-950 font-bold py-2">
                     <NavLink
                       to="/kacchi"
                       className={({ isActive }) =>
                         isActive
-                          ? "text-yellow-500 border-b-4 border-yellow-500 p-2"
-                          : "p-2 hover:bg-gray-200"
+                          ? "text-yellow-500 flex relative z-[1000] border-b-4 border-yellow-500 p-2"
+                          : "p-2 flex relative z-[1000] hover:bg-gray-200 "
                       }
                     >
                       Kacchi
