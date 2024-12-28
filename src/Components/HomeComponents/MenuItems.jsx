@@ -95,7 +95,8 @@ const MenuItems = () => {
 
         {/* Menu Item 4 */}
 
-        <div
+        <Link
+          to="/polaoMenu"
           className="relative group rounded-full transition-all duration-300 ease-in-out"
           data-aos="fade-up"
         >
@@ -110,7 +111,7 @@ const MenuItems = () => {
           <h2 className="text-center font-bold text-[12px] group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
             Polao
           </h2>
-        </div>
+        </Link>
 
         {/* Menu Item 5 */}
         <div

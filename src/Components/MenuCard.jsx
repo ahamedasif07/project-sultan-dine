@@ -7,7 +7,7 @@ const MenuCard = ({ dish }) => {
   return (
     <div className="group py-2">
       {/* Add group class for hover effect */}
-      <div className=" bg-slate-100 px-2 py-13 rounded-2xl">
+      <div className=" bg-slate-100 h-[500px] px-2 py-13 rounded-2xl">
         <div className=" flex flex-col justify-center items-center relative overflow-hidden">
           <div className="bg-[#F7F2E2]  group-hover:bg-[#FFC222] rounded-t-xl group-hover:rounded-t-md  h-1/2 w-full transition-all duration-300 absolute bottom-0 group-hover:h-full"></div>
           <img

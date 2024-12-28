@@ -9,6 +9,7 @@ import Career from "./Pages/Career";
 import KacchiBasmoti from "./Components/AboutComponents/KacchiBasmoti";
 import KacchiDetails from "./Pages/KacchiDetails";
 import KacchiMenu from "./Pages/KacchiMenu";
+import PolaoMenu from "./Pages/PolaoMenu";
 // Correct import for LayOut component
 
 export const router = createBrowserRouter([
@@ -48,6 +49,10 @@ export const router = createBrowserRouter([
       {
         path: "/kacchiMenu",
         element: <KacchiMenu></KacchiMenu>,
+      },
+      {
+        path: "/polaoMenu",
+        element: <PolaoMenu></PolaoMenu>,
       },
     ],
   },
