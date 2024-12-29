@@ -31,8 +31,8 @@ const MenuCard = ({ dish }) => {
               </div>
             </h2> */}
           </div>
-          <div className="flex justify-between px-2 py-2">
-            <div>
+          <div className="flex gap-2 justify-between px-2 py-2">
+            <div className="flex  gap-2">
               <span className="text-yellow-500 text-[18px] font-bold">
                 {currency}
               </span>

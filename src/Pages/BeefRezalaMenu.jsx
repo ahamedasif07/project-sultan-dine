@@ -48,7 +48,7 @@ const BeefRezalaMenu = () => {
   return (
     <div>
       <div className="max-w-screen-lg mx-auto ">
-        <div className="grid gap-5 py-4 md:grid-cols-3 grid-cols-2">
+        <div className="grid gap-5 py-4 md:grid-cols-3 grid-cols-1 px-4">
           {menuItems.map((item) => (
             <MenuCard key={item.id} dish={item}></MenuCard>
           ))}
