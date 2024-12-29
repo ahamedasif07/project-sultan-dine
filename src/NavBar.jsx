@@ -192,6 +192,18 @@ const NavBar = () => {
                 About
               </NavLink>
             </li>
+            <li className="text-[13px] text-red-950 font-bold">
+              <NavLink
+                to="/shop"
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-yellow-500 border-b-4 text-[13px]  font-bold border-yellow-500"
+                    : "hover:text-yellow-500 "
+                }
+              >
+                shop
+              </NavLink>
+            </li>
             {/* Shop Dropdown */}
             {/* Shop Dropdown */}
             {/* <li className="relative text-[13px] text-red-950 font-bold">

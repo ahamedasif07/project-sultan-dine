@@ -14,6 +14,7 @@ import BeefRezalaMenu from "./Pages/BeefRezalaMenu";
 import RoastMenu from "./Pages/RoastMenu";
 import AddOnMenu from "./Pages/AddOnMenu";
 import BorhaniMenu from "./Pages/BorhaniMenu";
+import Shop from "./Pages/Shop";
 // Correct import for LayOut component
 
 export const router = createBrowserRouter([
@@ -73,6 +74,10 @@ export const router = createBrowserRouter([
       {
         path: "/BorhaniMenus",
         element: <BorhaniMenu></BorhaniMenu>,
+      },
+      {
+        path: "/shop",
+        element: <Shop></Shop>,
       },
     ],
   },
