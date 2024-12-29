@@ -370,7 +370,10 @@ const NavBar = () => {
                       </span>
                     </h2>
                   </div>
-                  <li className="text-[16px] my-2 text-gray-200 flex font-bold py-2">
+                  <li
+                    onClick={() => setISMenuOpen(false)}
+                    className="text-[16px] my-2 text-gray-200 flex font-bold py-2"
+                  >
                     <NavLink
                       to="/"
                       className={({ isActive }) =>
@@ -380,7 +383,10 @@ const NavBar = () => {
                       Home
                     </NavLink>
                   </li>
-                  <li className="text-[16px] my-2 text-gray-200 text--bold py-2">
+                  <li
+                    onClick={() => setISMenuOpen(false)}
+                    className="text-[16px] my-2 text-gray-200 text--bold py-2"
+                  >
                     <NavLink
                       to="/about"
                       className={({ isActive }) =>
@@ -391,64 +397,22 @@ const NavBar = () => {
                     </NavLink>
                   </li>
                   <li
+                    onClick={() => setISMenuOpen(false)}
                     ref={shopRef}
                     className="relative text-[16px] my-2 text-gray-200 text--bold py-2"
                   >
-                    <h2
+                    <Link
+                      to="/shop"
                       className="cursor-pointer flex items-center gap-2"
                       onClick={() => setIsShopOpen((prev) => !prev)}
                     >
                       Shop
-                      <span>
-                        {isShopOpen ? <FaAngleUp /> : <FaChevronDown />}
-                      </span>
-                    </h2>
-                    {isShopOpen && (
-                      <ul
-                        className={`absolute left-0 mt-2 w-[200px] border-2 border-gray-600 bg-black shadow-lg rounded-md z-50 transition-all duration-500 ease-in-out transform ${
-                          isShopOpen ? "opacity-100 h-auto" : "opacity-0 h-0"
-                        } overflow-hidden`}
-                      >
-                        <li className="text-[16px] my-2 text-gray-200 text--bold py-2">
-                          <NavLink
-                            to="/shop/clothing"
-                            className={({ isActive }) =>
-                              isActive
-                                ? "text-yellow-500 p-2"
-                                : "p-2 hover:bg-gray-200"
-                            }
-                          >
-                            Clothing
-                          </NavLink>
-                        </li>
-                        <li className="text-[16px] my-2 text-gray-200 text--bold py-2">
-                          <NavLink
-                            to="/shop/accessories"
-                            className={({ isActive }) =>
-                              isActive
-                                ? "text-yellow-500 p-2"
-                                : "p-2 hover:bg-gray-200"
-                            }
-                          >
-                            Accessories
-                          </NavLink>
-                        </li>
-                        <li className="text-[16px] my-2 text-gray-200 text--bold py-2">
-                          <NavLink
-                            to="/shop/footwear"
-                            className={({ isActive }) =>
-                              isActive
-                                ? "text-yellow-500 p-2"
-                                : "p-2 hover:bg-gray-200"
-                            }
-                          >
-                            Footwear
-                          </NavLink>
-                        </li>
-                      </ul>
-                    )}
+                    </Link>
                   </li>
-                  <li className="text-[16px] my-2 text-gray-200 text--bold py-2">
+                  <li
+                    onClick={() => setISMenuOpen(false)}
+                    className="text-[16px] my-2 text-gray-200 text--bold py-2"
+                  >
                     <NavLink
                       to="/catering"
                       className={({ isActive }) =>
@@ -458,7 +422,10 @@ const NavBar = () => {
                       Catering
                     </NavLink>
                   </li>
-                  <li className="text-[16px] my-2 text-gray-200 text--bold py-2">
+                  <li
+                    onClick={() => setISMenuOpen(false)}
+                    className="text-[16px] my-2 text-gray-200 text--bold py-2"
+                  >
                     <NavLink
                       to="/reservation"
                       className={({ isActive }) =>
@@ -468,7 +435,10 @@ const NavBar = () => {
                       Reservation
                     </NavLink>
                   </li>
-                  <li className="text-[16px] my-2 text-gray-200 text--bold py-2">
+                  <li
+                    onClick={() => setISMenuOpen(false)}
+                    className="text-[16px] my-2 text-gray-200 text--bold py-2"
+                  >
                     <NavLink
                       to="/media-outlets"
                       className={({ isActive }) =>
@@ -478,7 +448,10 @@ const NavBar = () => {
                       Media Outlets
                     </NavLink>
                   </li>
-                  <li className="text-[16px] my-2 text-gray-200 text--bold py-2">
+                  <li
+                    onClick={() => setISMenuOpen(false)}
+                    className="text-[16px] my-2 text-gray-200 text--bold py-2"
+                  >
                     <NavLink
                       to="/career"
                       className={({ isActive }) =>
