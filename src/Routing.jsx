@@ -11,6 +11,8 @@ import KacchiDetails from "./Pages/KacchiDetails";
 import KacchiMenu from "./Pages/KacchiMenu";
 import PolaoMenu from "./Pages/PolaoMenu";
 import BeefRezalaMenu from "./Pages/BeefRezalaMenu";
+import RoastMenu from "./Pages/RoastMenu";
+import AddOnMenu from "./Pages/AddOnMenu";
 // Correct import for LayOut component
 
 export const router = createBrowserRouter([
@@ -58,6 +60,14 @@ export const router = createBrowserRouter([
       {
         path: "/beefRezalaMenu",
         element: <BeefRezalaMenu></BeefRezalaMenu>,
+      },
+      {
+        path: "/RoastMenu",
+        element: <RoastMenu></RoastMenu>,
+      },
+      {
+        path: "/addOnMenu",
+        element: <AddOnMenu></AddOnMenu>,
       },
     ],
   },

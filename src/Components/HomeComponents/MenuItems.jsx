@@ -77,7 +77,8 @@ const MenuItems = () => {
         </Link>
 
         {/* Menu Item 3 */}
-        <div
+        <Link
+          to="/RoastMenu"
           className="relative group rounded-full transition-all duration-300 ease-in-out"
           data-aos="fade-up"
         >
@@ -92,7 +93,7 @@ const MenuItems = () => {
           <h2 className="text-center font-bold text-[12px] group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
             Rost
           </h2>
-        </div>
+        </Link>
 
         {/* Menu Item 4 */}
 
@@ -133,7 +134,8 @@ const MenuItems = () => {
         </div>
 
         {/* Menu Item 6 */}
-        <div
+        <Link
+          to="/addOnMenu"
           className="relative group rounded-full transition-all duration-300 ease-in-out"
           data-aos="fade-up"
         >
@@ -148,7 +150,7 @@ const MenuItems = () => {
           <h2 className="text-center font-bold text-[12px] group-hover:text-yellow-500 transition-all duration-300 ease-in-out scale-105 uppercase mt-2">
             Add On
           </h2>
-        </div>
+        </Link>
       </div>
     </div>
   );
